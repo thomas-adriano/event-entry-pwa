@@ -1,0 +1,25 @@
+<section appPageTransition class="app-page display-flex-column-centered printer-config">
+  <form class="app-printer-config" #printerConfigForm="ngForm">
+    <fieldset class="app-fieldset">
+      <label for="proxyIp" class="app-label printer-config__label">IP do proxy</label>
+      <input [(ngModel)]="proxyIp" type="text" name="proxyIp" id="proxyIp" required class="app-input--large text-align-centered printer-config__input">
+    </fieldset>
+    <fieldset class="app-fieldset">
+      <label for="printerIp" class="app-label printer-config__label">IP da impressora</label>
+      <input pattern="\d?\d?\d\.\d?\d?\d\.\d?\d?\d\.\d?\d?\d" [(ngModel)]="printer.ip" type="text" name="printerIp" id="printerIp" required class="app-input--large text-align-centered printer-config__input">
+    </fieldset>
+    <fieldset class="app-fieldset">
+      <label for="textToPrint" class="app-label printer-config__label">Texto para impressão teste (opcional)</label>
+      <textarea class="app-text-area printer-config__input font-size-small" [(ngModel)]="printer.textToPrint"  name="textToPrint" id="textToPrint" cols="50" rows="10"></textarea>
+    </fieldset>
+
+    <div class="printer-config__btn-container">
+      <app-button buttonTypeAttr="submit" (click)="onSubmit()" [disabled]="!printerConfigForm.form.valid || isPrinting" btnType="success">
+        Tudo certo!
+      </app-button>
+      <app-button buttonTypeAttr="normal" btnType="normal" (click)="goToWelcome($event)">
+        Voltar
+      </app-button>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,30 @@
+<div #socialNumberKeyboardEl class="app-social-number-keyboard">
+  <div class="app-social-number-keyboard_row">
+    <input type="text" [textMask]="{mask: inputMask}" [(ngModel)]="inputModel" class="app-social-number-keyboard__input">
+  </div>
+  <div class="app-social-number-keyboard_row">
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">1</button>
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">2</button>
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">3</button>
+  </div>
+  <div class="app-social-number-keyboard_row">
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">4</button>
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">5</button>
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">6</button>
+  </div>
+  <div class="app-social-number-keyboard_row">
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">7</button>
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">8</button>
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">9</button>
+  </div>
+  <div class="app-social-number-keyboard_row">
+    <button type="button" class="app-social-number-keyboard_key" (click)="backspace()">
+      <i class="fa fa-arrow-circle-left"></i>
+    </button>
+    <button type="button" class="app-social-number-keyboard_key" (click)="keyboardPressed($event)">0</button>
+    <button type="button" class="app-social-number-keyboard_key app-social-number-keyboard_key--check" (click)="submit()">
+      <i class="fa fa-check"></i>
+    </button>
+  </div>
+
+</div>

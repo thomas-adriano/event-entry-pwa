@@ -1,0 +1,132 @@
+@import "~sass/variables.scss";
+
+$app-start-button-background-color: #fff;
+$app-start-button-color: rgba(240, 129, 25, 1);
+
+.app-start-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 3rem;
+}
+
+.app-start-button {
+  border: none;
+  width: 250px;
+  height: 250px;
+  color: $app-start-button-color;
+  font-size: 3rem;
+  display: inline-block;
+  background-color: $app-start-button-background-color;
+  animation: start-button-shadow-animation 3s infinite;
+  animation-direction: normal;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  z-index: $app-z-index-higher;
+}
+
+.app-start-button--active {
+  animation-play-state: paused;
+  box-shadow: 0;
+  transform: scale(0.95);
+  animation: button-down 0.1s, button-clearing 0.3s 0.3s,
+    button-color-shift 0.5s 0.3s ease;
+  animation-fill-mode: forwards;
+}
+
+.app-start-button--button-expansion {
+  animation: button-expansion 0.5s forwards;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+
+.app-start-button--button-color-shift {
+  animation: button-color-shift 0.5s forwards;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+
+.app-start-button__circle {
+  position: absolute;
+  display: inline-block;
+  height: 112%;
+  width: 112%;
+  background-color: rgba($app-start-button-background-color, 0);
+  border: 1px solid black;
+  transition: height 0.2s ease, width 0.2s ease;
+}
+
+.app-start-button__circle--active {
+  transform: scale(0.95);
+  height: 100%;
+  width: 100%;
+  transition: height 0.15s 0.075s ease, width 0.15s 0.0751s ease,
+    transform 0.15s 0.075s ease;
+}
+
+.app-start-button,
+.app-start-button__circle {
+  border-color: $app-start-button-background-color;
+  border-radius: 50%;
+}
+
+@keyframes start-button-shadow-animation {
+  0% {
+    box-shadow: 0px 0px 135px 20px rgba(255, 255, 255, 1);
+  }
+  35% {
+    box-shadow: 0px 0px 143px 28px rgba(255, 255, 255, 1);
+  }
+  100% {
+    box-shadow: 0px 0px 135px 20px rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes button-down {
+  0% {
+    box-shadow: 0px 0px 139px 24px rgba(255, 255, 255, 1);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes button-expansion {
+  0% {
+    height: 100%;
+    width: 100%;
+    background-color: rgba($app-start-button-background-color, 1);
+  }
+
+  100% {
+    height: 150vmax;
+    width: 150vmax;
+    background-color: rgba($color-almost-white, 1);
+  }
+}
+
+@keyframes button-color-shift {
+  0% {
+    background-color: rgba($app-start-button-background-color, 1);
+  }
+
+  100% {
+    background-color: rgba($color-almost-white, 1);
+  }
+}
+
+@keyframes button-clearing {
+  0% {
+    color: rgba($app-start-button-color, 1);
+  }
+
+  66% {
+    color: rgba($app-start-button-color, 0);
+  }
+
+  100% {
+    color: rgba($app-start-button-color, 0);
+  }
+}

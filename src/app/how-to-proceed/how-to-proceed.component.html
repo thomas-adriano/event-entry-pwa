@@ -1,0 +1,20 @@
+<section appPageTransition class="app-page display-flex-column-centered">
+  <h1 class="app-page-title">
+    Como deseja prosseguir?
+  </h1>
+  <app-interaction-box>
+    <div class="app-interaction-box__content-container how-to-proceed__content-container">
+      <div class="app-interaction-box__btn-container">
+        <app-button (click)="goToTryAgainPage()" class="app-how-to-proceed-btn" btnType="success">
+          Tentar Novamente
+        </app-button>
+        <app-button [hidden]="!showSocialNumberBtn" (click)="goToNameAccreditation()" class="app-how-to-proceed-btn">
+          Entrar com nome
+        </app-button>
+        <app-button [hidden]="!showHelpBtn" (click)="goToHelp()" class="app-how-to-proceed-btn" btnType="warning">
+          Solicitar suporte
+        </app-button>
+      </div>
+    </div>
+  </app-interaction-box>
+</section>

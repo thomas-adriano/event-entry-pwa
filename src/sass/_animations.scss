@@ -1,0 +1,71 @@
+
+
+  .page-transition-enter-left, .page-transition-enter-top, .page-transition-enter-center {
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+
+  .page-transition-enter-left {
+    animation-name: page-transition-animation-enter-left;
+  }
+
+  .page-transition-leave-right {
+    animation-name: page-transition-animation-leave-right;
+    animation-duration: 0.200s;
+  }
+
+  .page-transition-enter-top {
+    animation-name: page-transition-animation-enter-top;
+  }
+
+  .page-transition-enter-center {
+    animation-name: page-transition-animation-enter-center;
+  }
+
+  @keyframes page-transition-animation-leave-right {
+    from {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+
+    to {
+      opacity: 0;
+      transform: translateX(-75px);
+    }
+  }
+
+  @keyframes page-transition-animation-enter-left {
+    from {
+      opacity: 0;
+      transform: translateX(75px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes page-transition-animation-enter-top {
+    from {
+      opacity: 0;
+      transform: translateY(-75px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes page-transition-animation-enter-center {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+

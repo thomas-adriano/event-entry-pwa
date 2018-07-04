@@ -1,0 +1,17 @@
+<section appPageTransition class="app-page display-flex-column-centered">
+  <app-interaction-box [photo]="personPhoto">
+    <div class="app-interaction-box__content-container" ngClass="{'pos-accreditation__container': photo}">
+      <p class="pos-accreditation_description app-interaction-box__title">Olá,
+        <span class="person-name">{{activePerson.name}}!</span>
+      </p>
+      <p class="pos-accreditation_description app-interaction-box__text">
+        Você sabia que a Senior possui soluções completas de Tecnologia para Gestão em: ERP, RH, Acesso e Segurança, CRM, Logística,
+        Varejo, entre outras?
+      </p>
+      <div class="app-interaction-box__btn-container">
+        <app-button (click)="goToCredentialWithdrawal()" btnType="success">SIM!</app-button>
+        <app-button (click)="goToAccreditation()">você me confundiu</app-button>
+      </div>
+    </div>
+  </app-interaction-box>
+</section>
