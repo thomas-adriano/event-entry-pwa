@@ -1,0 +1,33 @@
+$app-help-color: #db9d09;
+$app-help-bg-color: #ffc947;
+
+.app-help-overlay {
+  background-color: $app-help-bg-color;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.app-help-title-container {
+  color: $app-help-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.help_button-container {
+  position: relative;
+}
+
+.help__button--info {
+  position: absolute;
+  transform: translateY(50%);
+  bottom: 50%;
+  right: 0;
+}
+
+.help__btn-info-icon {
+  position: absolute;
+}

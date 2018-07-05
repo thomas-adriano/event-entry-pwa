@@ -1,0 +1,18 @@
+<section appPageTransition class="app-page display-flex-column-centered">
+  <h1 class="app-page-title" [ngClass]="{'accreditation-error': isErrorStatus(), 'accreditation-success': !isErrorStatus()}">{{stepDescription}}</h1>
+  <app-interaction-box #interactionBox [status]="interactionBoxStatus">
+    <div class="app-interaction-box__content-container display-flex-column-centered">
+      <form (ngSubmit)="nextPage()" [formGroup]="nameAccreditationForm" class="name-accreditation__form display-flex-column-space-around">
+        <mat-form-field class="name-accreditation__form__field">
+          <input type="text" matInput formControlName="name" [matAutocomplete]="auto">
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="onOptionSelected($event)">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{ option }}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <app-button buttonTypeAttr="submit" [disabled]="submitDisabled()" btnType="success">Continuar</app-button>
+      </form>
+    </div>
+  </app-interaction-box>
+</section>

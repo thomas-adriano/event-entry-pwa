@@ -1,0 +1,16 @@
+<section class="app-page display-flex-column-centered">
+  <label for="camera-select" class="app-camera-config__label">Selecione uma camera:</label>
+  <select id="camera-select" [(ngModel)]="selectedCamera" #availableCamerasEl class="app-camera-config__camera-select app-camera-config__child">
+    <option *ngFor="let camera of availableCameras" value="camera">{{camera.label}}</option>
+  </select>
+  <video #videoEl autoplay class="app-camera-config__child app-camera-config__video"></video>
+  <p class="camera-config__status">{{scanStatus}}</p>
+  <div>
+    <app-button [disabled]="!selectedCamera || scanning" buttonTypeAttr="normal" btnType="normal" (click)="startScan()">
+      Iniciar
+    </app-button>
+    <app-button buttonTypeAttr="normal" btnType="normal" routerLink="/welcome">
+      Voltar
+    </app-button>
+  </div>
+</section>

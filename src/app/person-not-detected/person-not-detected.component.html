@@ -1,0 +1,13 @@
+<section appPageTransition class="app-page display-flex-column-centered">
+  <app-interaction-box>
+    <div class="app-interaction-box__content-container display-flex-column-space-around">
+      <p class="app-interaction-box__text">
+        Não conseguimos encontrar face nenhuma :(
+      </p>
+      <div class="app-interaction-box__btn-container">
+        <app-button (click)="goToNameAccreditation()" btnType="success">credenciamento por nome</app-button>
+        <app-button (click)="goToAccreditation()">tentar novamente</app-button>
+      </div>
+    </div>
+  </app-interaction-box>
+</section>

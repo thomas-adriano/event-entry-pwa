@@ -3,10 +3,12 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
-    "types": []
+    "types": ["node"],
+    "baseUrl": "./",
+    "paths": {
+      "@app/core": ["app/core/index.ts"],
+      "@app/shared": ["app/shared/index.ts"]
+    }
   },
-  "exclude": [
-    "src/test.ts",
-    "**/*.spec.ts"
-  ]
+  "exclude": ["src/test.ts", "**/*.spec.ts"]
 }

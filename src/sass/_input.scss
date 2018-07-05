@@ -1,0 +1,24 @@
+.app-label {
+  font-size: 2rem;
+}
+
+.app-input--large {
+  height: 5rem;
+  font-size: 3rem;
+  border-radius: 30px;
+  border: 1px solid $color-silver;
+  outline: none;
+}
+
+.app-text-area {
+  border: 1px solid $color-silver;
+  outline: none;
+  border-radius: 30px;
+  padding: 16px;
+}
+
+.app-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}

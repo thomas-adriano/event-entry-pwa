@@ -1,0 +1,25 @@
+@import '~sass/variables.scss';
+
+.printer-config {
+  background-color: $color-white;
+  padding: 50px;
+}
+
+.app-printer-config {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.printer-config__btn-container {
+  margin: $app-margin-small;
+}
+
+.printer-config__label {
+  display: block;
+}
+
+.printer-config__input {
+  min-width: 15em;
+}

@@ -1,0 +1,108 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * jaf-domus:
+ *   - http://typekit.com/eulas/00000000000000003b9adf40
+ *   - http://typekit.com/eulas/00000000000000003b9adf41
+ *   - http://typekit.com/eulas/00000000000000003b9adf42
+ *   - http://typekit.com/eulas/00000000000000003b9adf44
+ *   - http://typekit.com/eulas/00000000000000003b9adf46
+ *   - http://typekit.com/eulas/00000000000000003b9adf47
+ *   - http://typekit.com/eulas/00000000000000003b9adf48
+ *
+ * © 2009-2018 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2018-02-01 19:45:43 UTC"}*/
+
+@import url('https://p.typekit.net/p.css?s=1&k=zwy2vqy&ht=tk&f=29004.29005.29006.29008.29010.29011.29012&a=9108341&app=typekit&e=css');
+
+@font-face {
+  font-family: 'jaf-domus';
+  src: url('https://use.typekit.net/af/940051/00000000000000003b9adf40/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/940051/00000000000000003b9adf40/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/940051/00000000000000003b9adf40/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3')
+      format('opentype');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'jaf-domus';
+  src: url('https://use.typekit.net/af/ced8e5/00000000000000003b9adf41/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/ced8e5/00000000000000003b9adf41/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/ced8e5/00000000000000003b9adf41/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+      format('opentype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'jaf-domus';
+  src: url('https://use.typekit.net/af/28d7f3/00000000000000003b9adf42/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/28d7f3/00000000000000003b9adf42/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/28d7f3/00000000000000003b9adf42/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('opentype');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'jaf-domus';
+  src: url('https://use.typekit.net/af/6c9c65/00000000000000003b9adf44/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/6c9c65/00000000000000003b9adf44/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/6c9c65/00000000000000003b9adf44/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'jaf-domus';
+  src: url('https://use.typekit.net/af/16a56f/00000000000000003b9adf46/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/16a56f/00000000000000003b9adf46/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/16a56f/00000000000000003b9adf46/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('opentype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'jaf-domus';
+  src: url('https://use.typekit.net/af/49ce5b/00000000000000003b9adf47/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/49ce5b/00000000000000003b9adf47/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/49ce5b/00000000000000003b9adf47/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3')
+      format('opentype');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'jaf-domus';
+  src: url('https://use.typekit.net/af/300bb0/00000000000000003b9adf48/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/300bb0/00000000000000003b9adf48/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/300bb0/00000000000000003b9adf48/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3')
+      format('opentype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+.tk-jaf-domus {
+  font-family: 'jaf-domus', sans-serif;
+}

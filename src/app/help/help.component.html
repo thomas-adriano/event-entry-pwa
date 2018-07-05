@@ -1,0 +1,22 @@
+<section appPageTransition class="app-page display-flex-column-centered">
+  <div class="app-help-overlay"></div>
+  <app-interaction-box>
+    <div class="app-interaction-box__content-container">
+      <div class="app-help-title-container">
+        <i class="fa fa-users fa-4x"></i>
+        <h1 class="app-interaction-box__title font-weight-bold">Aguarde, já chamamos alguém do staff para te auxiliar.</h1>
+      </div>
+      <p class="app-interaction-box__text">Estamos evoluindo constantemente nossa experiência de autoatendimento cognitivo, mas de vez em quando ainda necessitamos
+        de ajuda de um humano.
+      </p>
+      <div class="help_button-container">
+        <app-button class="help__button" (click)="goToEnd()">
+          Finalizar Atendimento
+        </app-button>
+        <app-button *ngIf="errorMsg" class="help__button--info" (click)="goToMoreInfo()">
+          <i class="fa fa-info-circle fa-2x help__btn-info-icon"></i>
+        </app-button>
+      </div>
+    </div>
+  </app-interaction-box>
+</section>

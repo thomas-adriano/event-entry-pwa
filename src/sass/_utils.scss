@@ -1,0 +1,59 @@
+@import '~sass/variables.scss';
+
+.display-flex-column-centered,
+.display-flex-row-centered {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.display-flex-column-centered {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.display-flex-column-space-around {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+.display-flex-row-centered {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.font-size-small {
+  font-size: 2em !important;
+}
+
+.font-weight-bold {
+  font-weight: bold !important;
+}
+
+.text-align-centered {
+  text-align: center !important;
+}
+
+.accreditation-error {
+  color: $app-error-color !important;
+}
+
+.accreditation-success {
+  color: $app-color-success !important;
+}
+
+.absolute-bottom-0 {
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
+.full-size {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.flip-image-x {
+  transform: scale(-1, 1) !important;
+  filter: FlipH !important;
+}

@@ -1,0 +1,9 @@
+<section appPageTransition class="app-page display-flex-column-centered">
+  <h1 class="app-page-title" [ngClass]="{'accreditation-error': isErrorStatus(), 'accreditation-success': !isErrorStatus()}">{{stepDescription}}</h1>
+  <app-interaction-box #interactionBox [status]="interactionBoxStatus">
+    <div class="app-interaction-box__content-container">
+      <app-social-number-keyboard [autoSize]="true" (socialNumber)="socialNumberSubmitted($event)">
+      </app-social-number-keyboard>
+    </div>
+  </app-interaction-box>
+</section>

@@ -1,0 +1,8 @@
+<section [appPageTransition]="{enter:'center'}" class="app-page display-flex-column-centered">
+  <h1 class="app-page-title app-accreditation__title" [ngClass]="{'accreditation-error': isErrorStatus(), 'accreditation-success': !isErrorStatus()}">{{stepDescription}}</h1>
+  <app-interaction-box [csstext]="interactionBoxCssText" [status]="interactionBoxStatus" id="js-camera-target" [elWidth]="cameraElWidth"
+    [elHeight]="cameraElHeight">
+    <app-camera [mode]="appCameraMode" (faceNotFound)="onFaceNotDetected()" (faceDetected)="onFaceDetection($event)" [width]="cameraElWidth"
+      [height]="cameraElHeight" (cameraError)="onCameraError($event)"></app-camera>
+  </app-interaction-box>
+</section>

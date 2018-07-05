@@ -1,0 +1,22 @@
+@import '~sass/variables.scss';
+
+.app-camera-config__child + .app-camera-config__child {
+  margin-top: $app-margin-small;
+}
+
+.app-camera-config__video {
+  background-color: rgba($color-black, 50%);
+}
+.app-camera-config__camera-select {
+  border: 1px solid $color-silver;
+  min-height: 50px;
+  font-size: 1rem;
+}
+
+.app-camera-config__label {
+  font-size: 2rem;
+}
+
+.camera-config__status {
+  font-size: 2rem;
+}

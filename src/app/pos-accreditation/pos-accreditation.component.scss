@@ -1,0 +1,13 @@
+@import '~sass/variables.scss';
+
+.pos-accreditation_description {
+  margin: 0;
+}
+
+.pos-accreditation_description + .pos-accreditation_description {
+  margin-top: $app-margin-small;
+}
+
+.pos-accreditation__container {
+  padding-top: 0;
+}

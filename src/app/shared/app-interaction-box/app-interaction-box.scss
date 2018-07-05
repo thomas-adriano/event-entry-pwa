@@ -1,0 +1,126 @@
+@import '~sass/variables.scss';
+
+$status-success-bg-color: rgba(90, 241, 88, 0.75);
+$success-circle-bg-color: #42ee68;
+$status-error-bg-color: rgba(#ff4e4a, 0.75);
+$error-circle-bg-color: #ff4e4a;
+$status-normal-bg-color: rgba(243, 243, 243, 0.75);
+$interaction-box-width: 750px;
+$interaction-box-height: 562.5px;
+
+@mixin status-pseudo-element($status) {
+  &::after {
+    @if $status == 'error' {
+      content: '\f00d';
+      background-color: $error-circle-bg-color;
+      animation-name: status-pseudo-element-opacity-anim;
+    }
+    @if $status == 'success' {
+      content: '\f00c';
+      background-color: $success-circle-bg-color;
+      animation-name: status-pseudo-element-opacity-anim;
+    }
+    @if $status == 'loading' {
+      content: '\f110';
+      background-color: transparent;
+      animation: status-pseudo-element-opacity-anim, rotation-anim infinite;
+    }
+    font-size: 4em;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    font-family: 'FontAwesome';
+    border-radius: 50%;
+    position: absolute;
+    color: $color-white;
+  }
+}
+
+@keyframes rotation-anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes status-pseudo-element-opacity-anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.app-interaction-box {
+  width: $interaction-box-width;
+  height: $interaction-box-height;
+  transition: height 0.3s ease, width 0.3s ease;
+  border-radius: 40px;
+  background-color: $color-more-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  padding: 0;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+}
+
+.app-iteration-box_content {
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  filter: blur(0);
+  transform: translateZ(
+    0
+  ); //necessario para evitar que o conteúdo com blur se mova 1px
+}
+
+.app-interaction-box-status-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  transition: background-color 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: $app-z-index-lower;
+}
+
+.app-interaction-box-status-overlay--normal {
+  background-color: transparent;
+  opacity: 0;
+  z-index: $app-z-index-lower;
+}
+
+.app-interaction-box-status-overlay--loading,
+.app-interaction-box-status-overlay--success,
+.app-interaction-box-status-overlay--error {
+  z-index: $app-z-index-higher;
+  & + .app-iteration-box_content {
+    filter: blur(2px);
+  }
+}
+
+.app-interaction-box-status-overlay--loading {
+  background-color: $status-normal-bg-color;
+  @include status-pseudo-element('loading');
+}
+
+.app-interaction-box-status-overlay--error {
+  background-color: $status-error-bg-color;
+  @include status-pseudo-element('error');
+}
+
+.app-interaction-box-status-overlay--success {
+  background-color: $status-success-bg-color;
+  @include status-pseudo-element('success');
+}
